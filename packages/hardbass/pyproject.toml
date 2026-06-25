@@ -7,6 +7,9 @@ dependencies = ["hard-bass==0.0.1"]
 [project.scripts]
 hardbass = "hard_bass.cli:main"
 
+[tool.uv.sources]
+hard-bass = { workspace = true }
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
