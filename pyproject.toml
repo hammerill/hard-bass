@@ -1,0 +1,21 @@
+[project]
+name = "hard-bass"
+version = "0.0.1"
+description = "Hard Bass."
+readme = "README.md"
+authors = [
+    { name = "hammerill", email = "kyrylo@hammerill.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "ntplib>=0.4.0",
+    "pillow>=12.1.1",
+]
+
+[project.scripts]
+hard-bass       = "hard_bass.cli:main"
+hardbass        = "hard_bass.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.10.12,<0.11.0"]
+build-backend = "uv_build"
