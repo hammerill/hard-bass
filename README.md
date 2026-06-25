@@ -3,9 +3,3 @@
 ```bash
 uvx hard-bass
 ```
-
-or
-
-```bash
-uvx hardbass
-```
