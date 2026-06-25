@@ -2,12 +2,6 @@ version = 1
 revision = 3
 requires-python = ">=3.12"
 
-[manifest]
-members = [
-    "hard-bass",
-    "hardbass",
-]
-
 [[package]]
 name = "hard-bass"
 version = "0.0.1"
@@ -22,17 +16,6 @@ requires-dist = [
     { name = "ntplib", specifier = ">=0.4.0" },
     { name = "pillow", specifier = ">=12.1.1" },
 ]
-
-[[package]]
-name = "hardbass"
-version = "0.0.1"
-source = { editable = "packages/hardbass" }
-dependencies = [
-    { name = "hard-bass" },
-]
-
-[package.metadata]
-requires-dist = [{ name = "hard-bass", editable = "." }]
 
 [[package]]
 name = "ntplib"
